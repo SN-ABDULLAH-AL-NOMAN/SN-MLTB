@@ -69,7 +69,7 @@ class TgUploader:
             self.__listener.onUploadError('No files to upload. Make sure if you filled USER_SESSION_STRING then you should use supergroup. In case you filled EXTENSION_FILTER then check if all file have this extension')
             return
         if self.__total_files <= self.__corrupted:
-            self.__listener.onUploadError('Files Corrupted or you delete commands message and file before completing task . You can check logs!')
+            self.__listener.onUploadError('Files Corrupted or you delete commands message and file before completing task.')
             return
         LOGGER.info(f"Leech Completed: {self.name}")
         size = get_readable_file_size(self.__size)
