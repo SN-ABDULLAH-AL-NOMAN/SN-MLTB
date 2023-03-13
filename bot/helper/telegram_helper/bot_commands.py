@@ -70,5 +70,6 @@ class _BotCommands:
         self.EvalCommand = f'eval{CMD_SUFFIX}'
         self.ExecCommand = f'exec{CMD_SUFFIX}'
         self.ClearLocalsCommand = f'clearlocals{CMD_SUFFIX}'
+        self.LimitCommand = getCommand(f'LIMIT_COMMAND', f'limit{CMD_SUFFIX}')
 
 BotCommands = _BotCommands()
